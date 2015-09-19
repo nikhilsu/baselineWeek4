@@ -3,6 +3,7 @@ package com.thoughtworks.baseline;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class GridTest {
 
@@ -68,5 +69,13 @@ public class GridTest {
         Grid grid = new Grid(cells);
 
         assertEquals(' ', grid.cellAt(2, 2));
+    }
+
+    @Test
+    public void shouldReturnTrueWhenEqualsMethodIsCalledOnItself() {
+        char[][] cells = {{'X', '-'}, {'X', 'X'}};
+        Grid grid = new Grid(cells);
+
+        assertTrue(grid.equals(grid));
     }
 }
