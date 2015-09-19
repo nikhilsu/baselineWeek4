@@ -1,7 +1,7 @@
 package com.thoughtworks.baseline;
 
 import java.util.Scanner;
-
+//Takes input from the user and returns a grid of cells
 public class InputReader {
     private Scanner scanner;
 
