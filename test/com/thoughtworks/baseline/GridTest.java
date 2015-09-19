@@ -90,4 +90,12 @@ public class GridTest {
 
         assertFalse(gridOne.equals(gridTwo));
     }
+
+    @Test
+    public void shouldReturnAFalseWhenTryingToEquateAGridWithSomethingThatIsNotAGrid() {
+        char[][] cells = {{'X', '-'}, {'X', 'X'}};
+        Grid grid = new Grid(cells);
+
+        assertFalse(grid.equals("grid"));
+    }
 }
