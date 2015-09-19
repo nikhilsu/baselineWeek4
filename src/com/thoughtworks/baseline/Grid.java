@@ -10,7 +10,7 @@ public class Grid {
     public char cellAt(int x, int y) {
         if (x < 0 || x >= cells.length)
             return ' ';
-        if (y < 0)
+        if (y < 0 || y >= cells.length)
             return ' ';
         return cells[x][y];
     }

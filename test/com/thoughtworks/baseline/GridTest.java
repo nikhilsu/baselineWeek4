@@ -45,4 +45,12 @@ public class GridTest {
 
         assertEquals(' ', grid.cellAt(1, -1));
     }
+
+    @Test
+    public void shouldReturnNoCellWhenTheProbedColumnIsGreaterThanTheSizeOfThe2DArray() {
+        char[][] cells = {{'X', '-'}, {'X', 'X'}};
+        Grid grid = new Grid(cells);
+
+        assertEquals(' ', grid.cellAt(1, 2));
+    }
 }
