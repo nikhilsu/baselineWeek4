@@ -1,4 +1,5 @@
 package com.thoughtworks.baseline;
+
 //Parser takes in an array of string input from the user parses and returns a grid of cells
 public class Parser {
     private String[] userInput;
