@@ -114,4 +114,13 @@ public class GridTest {
 
         assertEquals(grid.hashCode(), grid.hashCode());
     }
+
+    @Test
+    public void shouldAssertThat2ObjectsWithSameStatesWillHaveSameHashCodes() {
+        char[][] cells = {{'X', '-'}, {'X', 'X'}};
+        Grid gridOne = new Grid(cells);
+        Grid gridTwo = new Grid(cells);
+
+        assertEquals(gridOne.hashCode(), gridTwo.hashCode());
+    }
 }
