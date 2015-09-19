@@ -2,13 +2,13 @@ package com.thoughtworks.baseline;
 
 //Universe holds the grid of cells
 public class Universe {
-    private char [][] grid;
+    private Grid grid;
 
-    public Universe(char[][] grid) {
+    public Universe(Grid grid) {
         this.grid = grid;
     }
 
-    public char[][] getGrid() {
+    public Grid getGrid() {
         return grid;
     }
 }

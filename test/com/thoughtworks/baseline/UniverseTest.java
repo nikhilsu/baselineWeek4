@@ -7,7 +7,8 @@ import static org.junit.Assert.assertEquals;
 public class UniverseTest {
     @Test
     public void shouldReturnTheCurrentCellGrid() {
-        char [][] grid = {{'X', 'X'}, {'X', 'X'} };
+        char [][] cells = {{'X', 'X'}, {'X', 'X'} };
+        Grid grid = new Grid(cells);
         Universe universe = new Universe(grid);
 
         assertEquals(grid.getClass(), universe.getGrid().getClass());
