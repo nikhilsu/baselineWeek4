@@ -1,4 +1,7 @@
 package com.thoughtworks.baseline;
+
+import java.util.Arrays;
+
 //grid holds a 2-D array of cells and return a cell at a particular coordinate
 public class Grid {
     char[][] cells;
@@ -17,6 +20,10 @@ public class Grid {
 
     @Override
     public boolean equals(Object obj) {
-        return true;
+        Grid that = (Grid) obj;
+        if (Arrays.deepEquals(that.cells, this.cells))
+            return true;
+        else
+            return false;
     }
 }
