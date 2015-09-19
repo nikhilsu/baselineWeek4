@@ -9,7 +9,7 @@ public class ParserTest {
 
     @Test
     public void shouldParseTheInputStringAndReturnAGridOfCells() {
-        String[] userInput = {"X -", "X -"};
+        String[] userInput = {"X-", "X-"};
         Parser parser = new Parser(userInput);
 
         assertEquals(parser.parse().getClass(), Grid.class);

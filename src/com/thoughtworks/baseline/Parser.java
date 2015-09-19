@@ -9,11 +9,8 @@ public class Parser {
 
     public Grid parse() {
         char [][] cells = new char [userInput.length][];
-        int i = 0;
-        for (String inputLine : userInput) {
-            inputLine = inputLine.trim();
-            inputLine = inputLine.replace("\\s", "");
-            cells[i++] = inputLine.toCharArray();
+        for (int i = 0; i < userInput.length; i++) {
+            cells[i] = userInput[i].toCharArray();
         }
         return new Grid(cells);
     }
