@@ -11,6 +11,14 @@ public class GridTest {
         char[][] cells = {{'X', '-'}, {'X', 'X'}};
         Grid grid = new Grid(cells);
 
-        assertEquals('X', grid.cellAt(2, 2));
+        assertEquals('X', grid.cellAt(1, 1));
+    }
+
+    @Test
+    public void shouldReturnAnADeadCellWhenThePositionProbedIs0Comma1() {
+        char[][] cells = {{'X', '-'}, {'X', 'X'}};
+        Grid grid = new Grid(cells);
+
+        assertEquals('-', grid.cellAt(0, 1));
     }
 }

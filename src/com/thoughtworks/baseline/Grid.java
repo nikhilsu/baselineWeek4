@@ -8,6 +8,6 @@ public class Grid {
     }
 
     public char cellAt(int x, int y) {
-        return 'X';
+        return cells[x][y];
     }
 }
