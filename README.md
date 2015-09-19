@@ -1,7 +1,7 @@
 
 ##Description
 
-Project to calculate Sales tax on purchased goods and print a receipt for the same.
+Project to Simulate Game Of Life
 
 ##Dependencies
 * JDK(1.6 or higher)
