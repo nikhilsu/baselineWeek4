@@ -14,4 +14,14 @@ public class ParserTest {
 
         assertEquals(parser.parse().getClass(), Grid.class);
     }
+
+    @Test
+    public void shouldReturnAnAppropriateGridObjectHaveCorrect2DArrayOfCells() {
+        String[] userInput = {"X-", "X-"};
+        Parser parser = new Parser(userInput);
+        char[][] cells = {{'X', '-'}, {'X', '-'}};
+        Grid grid = new Grid(cells);
+
+        assertEquals(parser.parse(), grid);
+    }
 }
