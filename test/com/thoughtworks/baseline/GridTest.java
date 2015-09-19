@@ -106,4 +106,12 @@ public class GridTest {
 
         assertFalse(grid.equals(null));
     }
+
+    @Test
+    public void shouldAssertThatSameObjectsHaveSameHashCodes() {
+        char[][] cells = {{'X', '-'}, {'X', 'X'}};
+        Grid grid = new Grid(cells);
+
+        assertEquals(grid.hashCode(), grid.hashCode());
+    }
 }

@@ -28,4 +28,9 @@ public class Grid {
         else
             return false;
     }
+
+    @Override
+    public int hashCode() {
+        return Arrays.deepHashCode(cells);
+    }
 }
