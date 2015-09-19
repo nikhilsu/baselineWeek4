@@ -10,6 +10,8 @@ public class Grid {
     public char cellAt(int x, int y) {
         if (x < 0 || x >= cells.length)
             return ' ';
+        if (y < 0)
+            return ' ';
         return cells[x][y];
     }
 }
