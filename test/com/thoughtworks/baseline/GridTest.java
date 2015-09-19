@@ -98,4 +98,12 @@ public class GridTest {
 
         assertFalse(grid.equals("grid"));
     }
+
+    @Test
+    public void shouldReturnFalseWhenTryingToEquateAGridWithNull() {
+        char[][] cells = {{'X', '-'}, {'X', 'X'}};
+        Grid grid = new Grid(cells);
+
+        assertFalse(grid.equals(null));
+    }
 }
