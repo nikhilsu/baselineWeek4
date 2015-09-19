@@ -53,4 +53,12 @@ public class GridTest {
 
         assertEquals(' ', grid.cellAt(1, 2));
     }
+
+    @Test
+    public void shouldReturnNoCellWhenTheProbedColumnAndRowIndicesAreLessThanZero() {
+        char[][] cells = {{'X', '-'}, {'X', 'X'}};
+        Grid grid = new Grid(cells);
+
+        assertEquals(' ', grid.cellAt(-1, -1));
+    }
 }
