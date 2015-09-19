@@ -8,6 +8,8 @@ public class Grid {
     }
 
     public char cellAt(int x, int y) {
+        if (x < 0)
+            return ' ';
         return cells[x][y];
     }
 }
